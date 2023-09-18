@@ -62,6 +62,9 @@ WORKDIR /opt/app/bundle/programs/server
 
 RUN npm install --production
 
-WORKDIR /opt/app
+WORKDIR /opt/app/bundle
+
+ENV PORT 3000
+ENV ROOT_URL http://localhost
 
 ENTRYPOINT /usr/local/bin/node main.js
