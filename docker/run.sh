@@ -4,4 +4,5 @@ exec docker run -it --rm \
 	--hostname mementeor.run.local \
 	-u nobody \
 	-p 127.0.0.1:3000:3000 \
+	--memory=100M \
 	mementeor

@@ -11,5 +11,6 @@ try {
     console.log("heap", v8.getHeapStatistics());
   }
 } catch(e) {
+  console.log("heap", v8.getHeapStatistics());
   console.log(e);
 }

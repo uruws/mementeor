@@ -67,4 +67,4 @@ WORKDIR /opt/app/bundle
 ENV PORT 3000
 ENV ROOT_URL http://localhost
 
-ENTRYPOINT /usr/local/bin/node main.js
+ENTRYPOINT /usr/local/bin/node --max-old-space-size=100 main.js
